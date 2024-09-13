@@ -1,5 +1,22 @@
 .features  {
     padding-top: 94px;
+
+    &-title {
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    &-description {
+        font-weight: 400;
+        font-size: $main-text-size;
+        line-height: 171%;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+    }
+    &-list {
+        display: flex;
+        gap: 30px;
+        padding-left: 0;
+    }
 }
 .features-list-item::before {
     display: block;
@@ -23,21 +40,4 @@
 }
 .features-list-item.astronaut::before {
     background-image: url(../images/main/astronaut.svg);
-}
-.features-title {
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.features-description{
-    font-weight: 400;
-    font-size: var(--main-text-size);
-    line-height: 171%;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-}
-
-.features-list {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
 }

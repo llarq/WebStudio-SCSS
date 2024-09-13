@@ -2,76 +2,70 @@
     padding-top: 24px;
     padding-bottom: 25px;
     border-bottom: 1px solid #eee;
-    /* display: flex;
-    align-items: center; */
-}
-
-.header-list {
-    font-weight: 500;
-    align-items: center;
-    gap: 50px;
-}
-
-
-nav span {
-    color: var(--main-current-color);
-}
-.header-logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    color: var(--logo-color);
-    text-decoration: none;
-    font-size: var(--title-main-webstudio);
-    margin-right: 93px;
+    &-list {
+        font-weight: 500;
+        align-items: center;
+        gap: 50px;
+    }
+    &-logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: var(--logo-color);
+        text-decoration: none;
+        font-size: $title-main-webstudio;
+        margin-right: 93px;
+    }
+    &-svg {
+        display: flex;
+        align-items: center; 
+        // fill: currentColor;
+    }
+    &-link-contacts {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        color: $main-text-color;
+    }
 }
 
 .header-link {
-    color: var(--main-heading-color);
+    color: $main-heading-color;
     text-decoration: none;
     position: relative;
+
+    &:hover,
+    :focus {
+        color: $main-current-color;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
+    }
 }
 
 .header-link-current {
-    color: var(--main-current-color);
+    color: $main-current-color;
 }
 .header-link.current::after {
     content: "";
     display: block;
-    background-color: var(--main-current-color);
+    background-color: $main-current-color;
     height: 4px;
     width: 100%;
     border-radius: 2px;
     margin-top: 28px;
     position: absolute;
 }
-.header-link.current {
-    color: var(--main-current-color);
-}
-.header-link-contacts {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    color: var(--main-text-color);
-}
-.header-link:hover,
-.header-link:focus {
-    color: var(--main-current-color);
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-item-svg {
-    display: flex;
-    align-items: center;
-}
+
 .header-list.contacts {
     margin-left: auto;
 }
-.header-icon-svg {
-    fill: currentColor;
-}
+
 .contacts {
     margin-right: 0;
     align-items: center;
     gap: 50px;
+}
+
+nav span {
+    color: $main-current-color;
 }

@@ -1,70 +1,71 @@
-.main-portfolio {
-    margin-top: 94px;
-    margin-bottom: 94px;
+.main {
+    &-portfolio {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+    &-title {
+        display: none; 
+    }
+    &-list {
+        margin-bottom: 34px;
+        text-align: center;
+        gap: 8px;
+    }
+    &-nav {
+        align-items: center;
+        justify-content: center;
+    }
 }
-.main-title {
-    display: none;
-}
-.main-list {
-    margin-bottom: 34px;
-    text-align: center;
-    gap: 8px;
-}
-.main-nav {
-    align-items: center;
-    justify-content: center;
-    
-}
+
 button {
     background-color: #F5F4FA;
-    color: var(--main-heading-color);
+    color: $main-heading-color;
     font-size: medium;
-    
 }
 .btn-portfolio {
     padding: 6px 22px;
     font-weight: 500;
-    font-size: var(--main-scnd-text-size);
+    font-size: $main-scnd-text-size;
     letter-spacing: 0.03em;
     text-align: center;
-    color: var(--main-heading-color);
+    color: $main-heading-color;
     border: 4px;
     transition-property: background-color, color, box-shadow;
     transition-duration: 250ms, 250ms, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+    &.main-btn-all {
+        width: 73px;
+        height: 38px;
+        border-radius: 4px;
+    }
+    &.main-btn-web {
+        width: 125px;
+        height: 38px;
+        border-radius: 4px;
+    }
+    &.main-btn-app {
+        width: 112px;
+        height: 38px;
+        border-radius: 4px;
+    }
+    &.main-btn-dsgn {
+        width: 103px;
+        height: 38px;
+        border-radius: 4px;
+    }
+    &.main-btn-mark {
+        width: 130px;
+        height: 38px;
+        border-radius: 4px;
+    }
 }
 .btn-portfolio:hover{
-    background-color: var(--main-current-color);
+    background-color: $main-current-color;
     color: #FFFFFF;
     box-shadow: 
     0 2px 2px 0 rgba(0, 0, 0, 0.12), 
     0 1px 2px 0 rgba(0, 0, 0, 0.08), 
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
-}
-.main-btn-all {
-    width: 73px;
-    height: 38px;
-    border-radius: 4px;
-}
-.main-btn-web {
-    width: 125px;
-    height: 38px;
-    border-radius: 4px;
-}
-.main-btn-app {
-    width: 112px;
-    height: 38px;
-    border-radius: 4px;
-}
-.main-btn-dsgn {
-    width: 103px;
-    height: 38px;
-    border-radius: 4px;
-}
-.main-btn-mark {
-    width: 130px;
-    height: 38px;
-    border-radius: 4px;
 }
 
 .main-projects {
@@ -90,14 +91,14 @@ button {
     transform: translateY(100%);
     transition: transform 500ms ease-in;
     padding: 63px 24px;
-}
-.overlay-description {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 156%;
-    letter-spacing: 0.03em;
-    color: #fff;
+    &-description {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        letter-spacing: 0.03em;
+        color: #fff;
+    }
 }
 .main-project-list:hover .overlay {
     transform: translateY(0%);
@@ -114,13 +115,14 @@ button {
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        box-shadow:
+        1px 4px 6px 0 rgba(0, 0, 0, 0.16),
+        0 4px 4px 0 rgba(0, 0, 0, 0.06),
+        0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    }
 }
-.main-project-list:hover {
-    box-shadow:
-    1px 4px 6px 0 rgba(0, 0, 0, 0.16),
-    0 4px 4px 0 rgba(0, 0, 0, 0.06),
-    0 1px 1px 0 rgba(0, 0, 0, 0.12);
-}
+
 .project-info {
     border: 1px solid #eee;
     border-top: none;

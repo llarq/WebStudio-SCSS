@@ -1,33 +1,36 @@
-.team-title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: var(--title-text-size);
-    letter-spacing: 0.03em;
-}
 .team {
     background-color: #F5F4FA;
+    &-title {
+        text-align: center;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: $title-text-size;
+        letter-spacing: 0.03em;
+    }
+    &-list {
+        display: flex;
+        gap: 30px;
+        padding-left: 0;
+    }
+    &-name {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &-proffesion {
+        margin-bottom: 16px;
+    }
+    &-icons-list {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-left: 0;
+        padding-bottom: 30px;
+    }
+    &-icons-svg {
+        fill: $logo-svg-main-color;
+    }
 }
-.team-list {
-    display: flex;
-    gap: 30px;
-    padding-left: 0;
-    
-}
-.team-name {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.team-proffesion {
-    margin-bottom: 16px;
-}
-.team-icons-list {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    padding-left: 0;
-    padding-bottom: 30px;
-}
+
 .team-icons-item {
     display: flex;
     align-items: center;
@@ -39,18 +42,15 @@
     transition-property: background-color, fill;
     transition-duration: 250ms, 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-icons-item > a {
-    height: 20px;
-}
-.team-icons-item:hover {
-    background-color: var(--main-current-color);
-}
-.team-icons-item:hover .team-icons-svg {
-    fill: #FFFFFF;
-}
-.team-icons-svg {
-    fill: var(--logo-svg-main-color);
+    & > a {
+        height: 20px;
+    }
+    &:hover {
+        background-color: $main-current-color;
+    }
+    &:hover .team-icons-svg {
+        fill: #FFFFFF;
+    }
 }
 .team-list-item {
     display: block;
@@ -59,10 +59,10 @@
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.team-list-item:hover {
-    box-shadow:
-    0 2px 1px 0 rgba(0, 0, 0, 0.2),
-    0 1px 1px 0 rgba(0, 0, 0, 0.14),
-    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    &:hover {
+        box-shadow:
+        0 2px 1px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
 }
