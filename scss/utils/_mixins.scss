@@ -1,0 +1,12 @@
+@mixin paddings ($top , $bottom) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin margins ($top , $bottom) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin flexible ($gap) {
+    display: flex;
+    gap: $gap;
+}

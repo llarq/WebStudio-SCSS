@@ -1,9 +1,16 @@
 .features  {
     padding-top: 94px;
+    @media screen and (max-width: 767px) {
+        padding-top: 60px;
+    }
 
     &-title {
         margin-bottom: 10px;
         text-transform: uppercase;
+        @extend %text-subtitle;
+        @media screen and (max-width: 767px) {
+            text-align: center;
+        }
     }
     &-description {
         font-weight: 400;
@@ -11,11 +18,13 @@
         line-height: 171%;
         letter-spacing: 0.03em;
         color: $main-text-color;
-    }
+    } 
     &-list {
-        display: flex;
-        gap: 30px;
+        @include flexible (30px);
         padding-left: 0;
+        @media screen and (max-width: 767px) {
+          display: block;  
+        }
     }
 }
 .features-list-item::before {

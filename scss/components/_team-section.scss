@@ -8,9 +8,12 @@
         letter-spacing: 0.03em;
     }
     &-list {
-        display: flex;
+        display: block;
         gap: 30px;
-        padding-left: 0;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            gap: 30px;
+        }
     }
     &-name {
         margin-top: 30px;
@@ -28,6 +31,14 @@
     }
     &-icons-svg {
         fill: $logo-svg-main-color;
+    }
+    &-image {
+        width: 270px;
+        height: 260px;
+        @media screen and (max-width: 767px) {
+            width: 450px;
+            height: 460px;
+        }
     }
 }
 
@@ -64,5 +75,8 @@
         0 2px 1px 0 rgba(0, 0, 0, 0.2),
         0 1px 1px 0 rgba(0, 0, 0, 0.14),
         0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    }
+    @media screen and (min-width: 480px) {
+        margin-bottom: 30px;
     }
 }

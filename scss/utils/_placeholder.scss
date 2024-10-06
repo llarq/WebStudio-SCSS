@@ -1,0 +1,18 @@
+%text-subtitle {
+    font-weight: 700;
+    font-size: $main-text-size;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-heading-color;
+}
+%flex-basis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+%text-title {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.03em;
+}

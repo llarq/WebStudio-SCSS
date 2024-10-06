@@ -1,7 +1,6 @@
 .main {
     &-portfolio {
-        margin-top: 94px;
-        margin-bottom: 94px;
+        @include margins (94px , 94px);
     }
     &-title {
         display: none; 

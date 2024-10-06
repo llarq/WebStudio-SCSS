@@ -1,4 +1,7 @@
 .work {
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
     &-image {
         display: block;
         max-width: 100%;
@@ -22,9 +25,7 @@
         position: absolute;
         background-color: rgba(47, 48, 58, 80%);
         font-family: $font-family;
-        font-weight: 700;
-        font-size: 14px;
-        letter-spacing: 0.03em;
+        @extend %text-subtitle;
         text-transform: uppercase;
         text-align: center;
         width: 370px;
