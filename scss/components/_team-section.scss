@@ -15,12 +15,15 @@
             gap: 30px;
             flex-wrap: wrap;
         }
+        @media screen and (min-width: 1200px) {
+            flex-wrap: nowrap;
+        }
     }
     &-name {
         margin-top: 30px;
         margin-bottom: 10px;
     }
-    &-proffesion {
+    &-profession {
         margin-bottom: 16px;
     }
     &-icons-list {
@@ -43,6 +46,10 @@
         @media screen and (min-width: 768px) {
             width: 354px;
             height: 344px;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+            height: 260px;
         }
     }
 }

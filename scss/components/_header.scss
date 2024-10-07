@@ -2,9 +2,6 @@
     @include paddings (24px , 25px);
     border-bottom: 1px solid #eee;
     &-list {
-        // font-weight: 500;
-        // align-items: center;
-        // gap: 50px;
         @media screen and (max-width: 767px) {
             display: none;
         }
@@ -14,6 +11,11 @@
             align-items: center;
             gap: 50px;
             font-size: $main-text-size;
+        }
+        @media screen and (min-width: 1200px) {
+            font-weight: 500;
+            align-items: center;
+            gap: 50px;
         }
 
     }
@@ -27,16 +29,15 @@
         display: flex;
         align-items: center;
     }
-    &-svg {
+    &-icon-svg {
         display: flex;
         align-items: center; 
-        // fill: currentColor;
+        fill: currentColor;
     }
     &-link-contacts {
         display: flex;
         gap: 10px;
         align-items: center;
-        color: $main-text-color;
     }
 }
 
@@ -75,6 +76,11 @@
         gap: 10px;
         align-items: flex-start;
     }
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 .contacts {
@@ -85,4 +91,7 @@
 
 nav span {
     color: $main-current-color;
+}
+.header-link-contacts {
+    color: #757575;
 }
