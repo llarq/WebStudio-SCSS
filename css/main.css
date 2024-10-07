@@ -592,7 +592,7 @@ nav span {
 }
 
 .flex-footer {
-  width: 1200px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .flex-footer {
@@ -605,6 +605,7 @@ nav span {
 }
 @media screen and (min-width: 1200px) {
   .flex-footer {
+    width: 1200px;
     flex-wrap: nowrap;
     gap: 0px;
   }
