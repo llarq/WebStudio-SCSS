@@ -48,6 +48,7 @@
         align-items: baseline;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 60px 106px;
     }
 }
 
@@ -66,6 +67,9 @@
         color: #fff;
         margin-bottom: 20px;
         @media screen and (max-width: 767px) {
+            text-align: center;
+        }
+        @media screen and (min-width: 768px) {
             text-align: center;
         }
     }
@@ -105,6 +109,9 @@
     @media screen and (max-width: 767px) {
         margin-left: 0px;
     }
+    @media screen and (min-width: 768px) {
+        margin-left: 0px;
+    }
     &-title {
         font-family: $font-family;
         font-weight: 700;
@@ -116,12 +123,19 @@
         @media screen and (max-width: 767px) {
             text-align: center;
         }
+        @media screen and (min-width: 768px) {
+            text-align: center;
+        }
     }
     &-form {
         display: flex;
+        flex-wrap: wrap;
         @media screen and (max-width:767px) {
             flex-wrap: wrap;
             justify-content: center;
+        }
+        @media screen and (min-width: 768px) {
+            
         }
     }
     &-input {
@@ -138,6 +152,9 @@
         padding: 16px 15px;
         @media screen and (max-width: 767px) {
             margin-bottom: 20px;
+            width: 450px;
+        }
+        @media screen and (min-width: 768px) {
             width: 450px;
         }
     }

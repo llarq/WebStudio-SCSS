@@ -2,11 +2,18 @@
     @include paddings (24px , 25px);
     border-bottom: 1px solid #eee;
     &-list {
-        font-weight: 500;
-        align-items: center;
-        gap: 50px;
+        // font-weight: 500;
+        // align-items: center;
+        // gap: 50px;
         @media screen and (max-width: 767px) {
             display: none;
+        }
+        @media screen and (min-width: 768px) {
+            display: flex;
+            font-weight: 500;
+            align-items: center;
+            gap: 50px;
+            font-size: $main-text-size;
         }
 
     }
@@ -17,6 +24,8 @@
         text-decoration: none;
         font-size: $title-main-webstudio;
         margin-right: 93px;
+        display: flex;
+        align-items: center;
     }
     &-svg {
         display: flex;
@@ -61,6 +70,11 @@
 
 .header-list.contacts {
     margin-left: auto;
+    @media screen and (min-width: 768px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
 
 .contacts {

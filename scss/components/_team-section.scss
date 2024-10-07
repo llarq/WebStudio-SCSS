@@ -13,6 +13,7 @@
         @media screen and (min-width: 768px) {
             display: flex;
             gap: 30px;
+            flex-wrap: wrap;
         }
     }
     &-name {
@@ -38,6 +39,10 @@
         @media screen and (max-width: 767px) {
             width: 450px;
             height: 460px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 354px;
+            height: 344px;
         }
     }
 }
