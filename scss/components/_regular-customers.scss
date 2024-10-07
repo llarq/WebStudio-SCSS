@@ -1,7 +1,7 @@
 
 .regular-customers {
 
-    // padding-bottom: 90px;
+    padding-bottom: 90px;
 
     &-title {
         font-weight: 700;
@@ -18,6 +18,9 @@
         gap: 30px;
         padding-top: 50px;
         padding-left: 0;
+        @media screen and (max-width: 767px) {
+            padding-bottom: 60px;
+        }
     }
     &-item {
         display: flex;
