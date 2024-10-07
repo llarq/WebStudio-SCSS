@@ -28,8 +28,13 @@ a {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #212121;
+}
+
+.footer-link, .footer-street {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 body {
@@ -572,10 +577,6 @@ nav span {
     text-align: center;
   }
 }
-.footer-link-gmail {
-  margin-bottom: 9px;
-  margin-top: 9px;
-}
 .footer span {
   color: #2196F3;
 }
@@ -605,7 +606,6 @@ nav span {
 }
 @media screen and (min-width: 1200px) {
   .flex-footer {
-    width: 1200px;
     flex-wrap: nowrap;
     gap: 0px;
   }
@@ -789,6 +789,11 @@ nav span {
 
 .grey {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.gmail {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 .visually-hidden {

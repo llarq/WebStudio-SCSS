@@ -1,9 +1,13 @@
 %text-subtitle {
     font-weight: 700;
-    font-size: $main-text-size;
+    font-size: 14px;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: $main-heading-color;
+}
+%text-address {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
 }
 %flex-basis {
     display: flex;

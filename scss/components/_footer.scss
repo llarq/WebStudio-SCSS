@@ -24,9 +24,11 @@
             text-align: center;
         }
     }
-    &-link-gmail {
-        margin-bottom: 9px;
-        margin-top: 9px;
+    &-street {
+        @extend %text-address;
+    }
+    &-link {
+        @extend %text-address;
     }
     & span {
         color: $main-current-color;
@@ -52,7 +54,6 @@
         gap: 60px 106px;
     }
     @media screen and (min-width: 1200px) {
-        width: 1200px;
         flex-wrap: nowrap;
         gap: 0px;
     }
@@ -204,4 +205,8 @@
 }
 .grey {
     color: rgba(255, 255, 255, 60%);
+}
+.gmail {
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
