@@ -168,4 +168,13 @@ button {
 }
 .project-title {
     margin-bottom: 4px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 200%;
+    letter-spacing: 0.06em;
+    color: $main-heading-color;
+}
+.PT-tablet {
+    font-size: 17px;
 }
