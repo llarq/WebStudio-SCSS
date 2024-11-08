@@ -45,6 +45,14 @@
     background-color: #FFFFFF;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 300ms, color 300ms;
+    @media screen and (min-width: 480px) {
+        
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     &-title {
         font-family: $font-family;
         font-weight: 700;
@@ -65,6 +73,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
     &-input {
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -74,6 +83,7 @@
         padding: 11px 12px;
         outline: none;
         width: 100%;
+        padding: 0px 10px 0px 40px;
     }
     &-textarea {
         border: 1px solid rgba(33, 33, 33, 0.2);
@@ -88,10 +98,48 @@
         display: flex;
         flex-direction: column;
         gap: 4px;
+        position: relative;
+    }
+    &-label-checkbox {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
     }
     &-checkbox {
-        margin-top: 17px;
-        fill: $main-heading-color;
+        color: $main-heading-color;
+        cursor: pointer;
+    }
+    &-svg {
+        position: absolute;
+        top: 33px;
+        left: 12px;
+    }
+    &-button {
+        display: block;
+        margin: 0 auto;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 187%;
+        letter-spacing: 0.06em;
+        text-align: center;
+        color: #fff;
+        background-color: $main-current-color;
+        padding: 10px 52px;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.30); 
+        }
     }
     }
     .backdrop.is-hidden .modal {
@@ -116,4 +164,13 @@
         text-decoration: underline;
         text-decoration-skip-ink: none;
         color: $main-current-color;
+        margin-bottom: 30px;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+    }
+
+    .modal-field:focus-within .modal-svg {
+        fill: $main-current-color;
     }

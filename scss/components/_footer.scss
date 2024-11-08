@@ -20,7 +20,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 20px;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             text-align: center;
         }
     }
@@ -38,7 +38,7 @@
     }
     &-main-info {
         justify-content: center;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             margin-bottom: 60px;
         }
     }
@@ -60,10 +60,13 @@
 }
 
 .footer-icons{
-    margin-left: 70px;
-    @media screen and (max-width: 767px) {
+    // margin-left: 70px;
+    @media screen and (min-width: 480px) {
         margin-left: 0px;
         margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
     }
     &-title {
         font-family: $font-family;
@@ -73,7 +76,7 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 20px;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             text-align: center;
         }
         @media screen and (min-width: 768px) {
@@ -86,7 +89,7 @@
     &-list {
         display: flex;
         gap: 10px;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             justify-content: center;
         }
     }
@@ -116,7 +119,7 @@
 
 .footer-subscribe {
     margin-left: 93px;
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         margin-left: 0px;
     }
     @media screen and (min-width: 768px) {
@@ -133,7 +136,7 @@
         text-transform: uppercase;
         color: #fff;
         margin-bottom: 20px;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             text-align: center;
         }
         @media screen and (min-width: 768px) {
@@ -145,10 +148,14 @@
     }
     &-form {
         display: flex;
-        @media screen and (max-width:767px) {
-            flex-wrap: wrap;
+        @media screen and (min-width: 480px) {
             justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+        } 
     }
     &-input {
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -162,15 +169,19 @@
         line-height: 125%;
         letter-spacing: 0.03em;
         padding: 16px 15px;
-        @media screen and (max-width: 767px) {
+        @media screen and (min-width: 480px) {
             margin-bottom: 20px;
             width: 450px;
+        }
+        @media screen and (max-width: 767px) {
+            width: 290px;
         }
         @media screen and (min-width: 768px) {
             width: 450px;
         }
         @media screen and (min-width: 1200px) {
             width: 358px;
+            margin-bottom: 0;
         }
     }
     &-button {
@@ -180,13 +191,18 @@
         font-size: 16px;
         line-height: 187%;
         letter-spacing: 0.06em;
-         align-items: center;
+        align-items: center;
         color: #fff;
         padding: 10px 28px;
-        margin-left: 12px;
         border-radius: 4px;
         background-color: #2195f3b9;
         color: #FFF;
+        @media screen and (min-width: 480px) {
+            width: 200px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-left: 12px;
+        }
     }
     &-icon {
         display: flex;
