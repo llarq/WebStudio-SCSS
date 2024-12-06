@@ -148,6 +148,7 @@ button {
 }
 
 .main-project-list {
+    
     flex-basis: 200px;
     transition-property: box-shadow;
     transition-duration: 250ms;
@@ -167,6 +168,7 @@ button {
     border: 1px solid #eee;
     border-top: none;
     padding: 20px 24px;
+    flex-grow: 1;
 }
 .project-title {
     margin-bottom: 4px;
@@ -177,6 +179,4 @@ button {
     letter-spacing: 0.06em;
     color: $main-heading-color;
 }
-.PT-tablet {
-    font-size: 17px;
-}
+
