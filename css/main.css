@@ -1340,6 +1340,8 @@ button {
 }
 
 .main-project-list {
+  display: flex;
+  flex-direction: column;
   flex-basis: 200px;
   transition-property: box-shadow;
   transition-duration: 250ms;
