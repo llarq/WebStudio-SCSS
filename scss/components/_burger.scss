@@ -32,6 +32,9 @@
   background-color: whitesmoke;
   padding: 40px 48px;
   transform: translate(100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .menu-container.is-open {
   transform: translateX(0%);
@@ -45,7 +48,9 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding-bottom: 306px;
+  @media screen and (min-width: 768px) {
+    
+  }
   &-address {
     display: flex;
     flex-direction: column;
@@ -70,7 +75,10 @@
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.02em;
-  color: $main-current-color;
+  color: $main-text-color;
+  &:hover {
+    color: $main-current-color;
+  }
 }
 .MM-mail {
   font-family: $font-family;

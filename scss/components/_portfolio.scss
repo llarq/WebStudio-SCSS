@@ -9,10 +9,12 @@
         margin-bottom: 34px;
         text-align: center;
         gap: 8px;
-        @media screen and (min-width: 480px) {
-            flex-wrap: wrap;
-            width: 326px;
-        }
+        flex-wrap: wrap;
+        width: 326px;
+        // @media screen and (min-width: 480px) {
+        //     flex-wrap: wrap;
+        //     width: 326px;
+        // }
         @media screen and (min-width: 768px) {
             flex-wrap: nowrap;
             width: auto;
